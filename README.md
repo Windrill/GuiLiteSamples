@@ -1,3 +1,9 @@
+# GuiLite without IP tracing traps
+## Tip: chmod 777 is unsafe
+- Removed the curl commands from the code
+- Not very sure if ExternalWindow/X11/xWindow is trapped with this silly trap
+
+
 <p align="center">
     <img src="doc/GuiLiteCube.gif" alt="Image" width="600" height="300"/>
 </p>

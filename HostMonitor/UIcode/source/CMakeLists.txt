@@ -26,7 +26,6 @@ FILE(GLOB UI_TREE ui_layout/*.cpp
 	ui_layout/View/top_bar/*.cpp
 	ui_layout/View/top_bar/patient/*.cpp
 	ui_layout/View/trend/*.cpp
-)
 
 ADD_LIBRARY(UIcode
 				${MANAGER}

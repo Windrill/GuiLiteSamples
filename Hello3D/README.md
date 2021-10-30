@@ -31,7 +31,6 @@
     - `cd Hello3D`
     - `cmake . && make`
     - `cd BuildLinux`
-    - `chmod 777 *`
 2. Run locally(e.g, Ubuntu):
     - Run with framebuffer: `sudo ./Hello3D /dev/fb0`&nbsp;&nbsp;&nbsp;&nbsp;/dev/fb0: The path of framebuffer device file.
     - Run inside X Window: `sudo ./xWindow 240 320 | ./Hello3D shared-fb`
@@ -46,5 +45,4 @@
     - For ARM64: `cmake -D CMAKE_C_COMPILER="/usr/bin/aarch64-linux-gnu-gcc" -D CMAKE_CXX_COMPILER="/usr/bin/aarch64-linux-gnu-g++" . && make`
 3. Run on target Linux device:
     - Copy BuildLinux/Hello3D to target Linux device
-    - `chmod 777 Hello3D`
     - `sudo ./Hello3D /dev/fb0`&nbsp;&nbsp;&nbsp;&nbsp;/dev/fb0: The path of framebuffer

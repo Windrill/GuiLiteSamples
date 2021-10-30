@@ -8,6 +8,3 @@ FILE(GLOB SOURCE *.cpp)
 
 ADD_LIBRARY(UIcode  ${SOURCE})
 
-execute_process(
-    COMMAND ${CMAKE_SOURCE_DIR}/.sync_build.sh HelloMolecule
-)

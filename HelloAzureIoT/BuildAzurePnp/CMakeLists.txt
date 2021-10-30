@@ -14,13 +14,11 @@ set(source_files
     main-adu.c
     func.cpp
     pnp/common/pnp_dps_ll.c
-)
 else()
 set(source_files
     main.c
     func.cpp
     pnp/common/pnp_dps_ll.c
-)    
 endif()
 
 add_definitions(-DUSE_PROV_MODULE_FULL)
@@ -36,4 +34,3 @@ target_link_libraries(pnpGuiLite crypto pthread ssl curl m)
 
 add_custom_command(TARGET pnpGuiLite 
     POST_BUILD
-    COMMAND ../.sync_build.sh HelloAzureIoT)

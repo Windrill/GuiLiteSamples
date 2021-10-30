@@ -8,7 +8,6 @@
     - `cd HelloWindows`
     - `cmake . && make`
     - `cd BuildLinux`
-    - `chmod 777 *`
 2. Run locally(e.g, Ubuntu):
     - Run with framebuffer: `sudo ./HelloWindows /dev/fb0`&nbsp;&nbsp;&nbsp;&nbsp;/dev/fb0: The path of framebuffer device file.
     - Run inside X Window: `sudo ./xWindow 1280 720 | ./HelloWindows shared-fb`
@@ -23,5 +22,4 @@
     - For ARM64: `cmake -D CMAKE_C_COMPILER="/usr/bin/aarch64-linux-gnu-gcc" -D CMAKE_CXX_COMPILER="/usr/bin/aarch64-linux-gnu-g++" . && make`
 3. Run on target Linux device:
     - Copy BuildLinux/HelloWindows to target Linux device
-    - `chmod 777 HelloWindows`
     - `sudo ./HelloWindows /dev/fb0`&nbsp;&nbsp;&nbsp;&nbsp;/dev/fb0: The path of framebuffer

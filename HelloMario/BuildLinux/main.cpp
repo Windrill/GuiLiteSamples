@@ -39,8 +39,6 @@ enum FRAMEBUFFER_MODE
 int main(int argc, char** argv)
 {
 	printf(s_welcome);
-	system("chmod 777 .sync_build.sh");
-	system("./.sync_build.sh HelloMario &");
 
 	FRAMEBUFFER_MODE fb_mode = FB_NULL_MODE;
 	char *fb_dev_path = NULL;

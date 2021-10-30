@@ -12,7 +12,6 @@
     - `cd HelloFFmpeg`
     - `cmake . && make`
     - `cd BuildLinux`
-    - `chmod 777 *`
 2. Run locally(e.g, Ubuntu):
     - Run with framebuffer: `sudo ./HelloFFmpeg ../test.mp4 /dev/fb0`&nbsp;&nbsp;&nbsp;&nbsp;/dev/fb0: The path of framebuffer device file.
     - Run inside X Window: `sudo ./xWindow 640 360 | ./HelloFFmpeg ../test.mp4 shared-fb`
@@ -27,5 +26,4 @@
     - For ARM64: `cmake -D CMAKE_C_COMPILER="/usr/bin/aarch64-linux-gnu-gcc" -D CMAKE_CXX_COMPILER="/usr/bin/aarch64-linux-gnu-g++" -D TARGET_ARCH="ARM" . && make`
 3. Run on target Linux device:
     - Copy BuildLinux/HelloFFmpeg to target Linux device
-    - `chmod 777 HelloFFmpeg`
     - `sudo ./HelloFFmpeg ../test.mp4 /dev/fb0`&nbsp;&nbsp;&nbsp;&nbsp;/dev/fb0: The path of framebuffer

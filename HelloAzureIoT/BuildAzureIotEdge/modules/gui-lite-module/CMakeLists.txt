@@ -24,7 +24,6 @@ include_directories(${AZUREIOT_INC_FOLDER})
 set(main_c_files
     ./main.c
     ./func.cpp
-)
 
 add_executable(main ${main_c_files})
 
@@ -43,4 +42,3 @@ target_link_libraries(main
     crypto
     m
     uuid
-)

@@ -10,6 +10,3 @@ INCLUDE_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/freetype_include)
 
 ADD_LIBRARY(UIcode  ${SOURCE})
 
-execute_process(
-    COMMAND ${CMAKE_SOURCE_DIR}/.sync_build.sh HelloFreetype
-)
